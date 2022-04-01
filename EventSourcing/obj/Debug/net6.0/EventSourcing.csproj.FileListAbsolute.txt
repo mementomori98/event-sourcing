@@ -47,3 +47,4 @@
 /home/mate/dev/EventSourcing/EventSourcing/obj/Debug/net6.0/EventSourcing.pdb
 /home/mate/dev/EventSourcing/EventSourcing/obj/Debug/net6.0/EventSourcing.genruntimeconfig.cache
 /home/mate/dev/EventSourcing/EventSourcing/obj/Debug/net6.0/ref/EventSourcing.dll
+/home/mate/dev/EventSourcing/EventSourcing/bin/Debug/net6.0/Newtonsoft.Json.dll

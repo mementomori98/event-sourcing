@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DIzoNiPM0em20tt8WuR8fHkUZyufxC2wS7dgKoaGBwjfDRW6+CtYbGYNm785/D7EdrYIB8wPZ1/f1O3MFKrbAA==",
+  "dgSpecHash": "vZc3Qf74rph9a77PSqeMguajyQ4s8048JNEYTv/FjlxgyggJ3+Vs+bulxGDaaq9xHJQ46gVEhPho9k6QQxQo6A==",
   "success": true,
   "projectFilePath": "/home/mate/dev/EventSourcing/EventSourcing/EventSourcing.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "/home/mate/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.0/microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "/home/mate/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
     "/home/mate/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/home/mate/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
     "/home/mate/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.0.6/sqlitepclraw.bundle_e_sqlite3.2.0.6.nupkg.sha512",
     "/home/mate/.nuget/packages/sqlitepclraw.core/2.0.6/sqlitepclraw.core.2.0.6.nupkg.sha512",
     "/home/mate/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.0.6/sqlitepclraw.lib.e_sqlite3.2.0.6.nupkg.sha512",

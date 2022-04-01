@@ -1,20 +1,28 @@
 ﻿
-using EventSourcing.Legacy;
-using EventSourcing.Readonly;
-using Microsoft.EntityFrameworkCore;
 
-await using var context = new Context();
+using EventSourcing;
+using EventSourcing.Abstractions;
+using EventSourcing.Accounts;
 
-await context.Database.EnsureDeletedAsync();
-await context.Database.EnsureCreatedAsync();
+Console.WriteLine("Hello World");
 
-await context.AddAsync(new Tenant {Name = "Mate"});
-await context.SaveChangesAsync();
+await InitAsync();
 
-var tenant = await context.Set<Tenant>().SingleAsync();
+await using var x = new BankAccountStore();
+await using var y = new BankAccountStore();
+IStore<BankAccount> store = x;
 
-await using var store = new ViewStore();
-var insurance = await store.Set<Insurance>().FirstOrDefaultAsync();
+var account = new BankAccount();
+account.Open();
+account.Transfer(-500, "");
+account.Transfer(200, "");
+var id = account.Id;
 
-Console.WriteLine(tenant.Name);
-Console.WriteLine($"Insurance: {insurance != default}");
+await store.SaveAsync(account);
+
+async Task InitAsync()
+{
+    await using var store = new BankAccountStore();
+    await store.Database.EnsureDeletedAsync();
+    await store.Database.EnsureCreatedAsync();
+}
